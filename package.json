@@ -4,13 +4,17 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "watchify src/main.jsx -v -t [ babelify --presets [ react ] ] -o public/js/main.js"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "babel-preset-react": "^6.5.0",
     "babel": "^6.5.2",
-    "babelify": "^7.3.0"
+    "babelify": "^7.3.0",
+    "react": "^15.1.0",
+    "react-dom": "^15.1.0",
+    "watchify": "^3.7.0"
   },
   "devDependencies": {
     "babel-preset-react": "^6.5.0",
